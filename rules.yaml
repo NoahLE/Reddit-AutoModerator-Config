@@ -1,7 +1,7 @@
 # Removing posts from accounts that are less than a week old
 
 author: 
-    account_age: < 7 day
+    account_age: '< 7 day'
 action: filter
 action_reason: 'Account is less than 7 days old.'
 comment: Sorry, your submission has been automatically removed. New accounts are not allowed to submit content. This is to combat spam.
@@ -10,7 +10,7 @@ comment: Sorry, your submission has been automatically removed. New accounts are
 # Remove posts from accounts with less than 3 karma
 
 author: 
-    comment_karma: < 3
+    comment_karma: '< -10'
 action: filter
 action_reason: 'Account has less than 3 karma.'
 comment: Sorry, your submission has been automatically removed. New accounts are not allowed to submit content. This is to combat spam.
@@ -59,14 +59,6 @@ action_reason: 'A credit card number was detected.'
 title+body: "\\b[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\b"
 action: filter
 action_reason: 'An IP address was detected.'
----
-
-# Negative Comment Karma Filter
-
-author:
-    comment_karma: "< -10"
-action: filter
-action_reason: 'User has very bad karma'
 ---
 
 # All Caps Title Filter
