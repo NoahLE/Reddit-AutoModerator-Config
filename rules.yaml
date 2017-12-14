@@ -10,10 +10,9 @@ comment: Sorry, your submission has been automatically removed. New accounts are
 # Remove posts from accounts with less than 3 karma
 
 author: 
-    comment_karma: '< -10'
+    comment_karma: '< -5'
 action: filter
-action_reason: 'Account has less than 3 karma.'
-comment: Sorry, your submission has been automatically removed. New accounts are not allowed to submit content. This is to combat spam.
+action_reason: 'Account has less than 5 karma.'
 ---
 
 # A script to catch arguements
